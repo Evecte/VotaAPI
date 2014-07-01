@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource
+         name="jdbc/eventodb" 
+         auth="Container" 
+         type="javax.sql.DataSource"
+         maxActive="50" 
+         maxIdle="30" 
+         maxWait="10000"
+         poolPreparedStatements="true"
+         maxOpenPreparedStatements="100"
+         validationQuery="Select 1"
+         defaultTransactionIsolation="READ_COMMITTED"
+         username="root" 
+         password="root" 
+         driverClassName="com.mysql.jdbc.Driver"
+         url="jdbc:mysql://localhost:3306/evento"
+    />
+    
+    <!-- Specify the security realm and location of the users file
+    <Realm className="org.apache.catalina.realm.MemoryRealm" 
+           pathname="/tomcat/webapps/ROOT/WEB-INF/users.xml" />
+    -->
+ 
+</Context>
